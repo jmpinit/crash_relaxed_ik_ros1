@@ -308,7 +308,6 @@ def main():
     joint_state_define_file_name = y['joint_state_define_func_file']
     joint_state_define_file = open(path_to_src + '/relaxed_ik_core/config/joint_state_define_functions/' + joint_state_define_file_name, 'r')
     joint_state_define = joint_state_define_file.read()
-    exec(joint_state_define)
 
     urdf_file = open(path_to_src + '/relaxed_ik_core/config/urdfs/' + urdf_file_name, 'r')
     urdf_string = urdf_file.read()
